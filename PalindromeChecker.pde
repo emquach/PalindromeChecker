@@ -6,11 +6,11 @@ public void setup()
   {
     if(palindrome(lines[i])==true)
     {
-      println("YES " + lines[i] + " IS a palidrome.");
+      println("YES, " + lines[i] + " IS a palidrome.");
     }
     else
     {
-      println("NO " + lines[i] + " is NOT a palidrome.");
+      println("NO, " + lines[i] + " is NOT a palidrome.");
     }
   }
 }
