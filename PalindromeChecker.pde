@@ -6,24 +6,37 @@ public void setup()
   {
     if(palindrome(lines[i])==true)
     {
-      println(lines[i] + " IS a palidrome.");
+      println("YES " + lines[i] + " IS a palidrome.");
     }
     else
     {
-      println(lines[i] + " is NOT a palidrome.");
+      println("NO " + lines[i] + " is NOT a palidrome.");
     }
   }
 }
+
 public boolean palindrome(String word)
 {
-  //your code here
-  return false;
+if (rof(word).equals(reverse(word)))
+    return true;
+    return false;
 }
-public String reverse(String str)
+
+public String rof(String str)
 {
-    String sNew = new String();
-    //your code here
-    return sNew;
+ String ver = new String ();
+ for (int i = 0; i < str.length(); i++)
+  if (str.charAt(i) != ' ' && Character.isLetter(str.charAt(i)) == true)
+    ver = ver + str.substring(i,i+1);
+      return ver.toLowerCase();
 }
 
-
+public String reverse(String ver)
+{
+  String sion = rof(ver);
+  String nois = new String();
+  for (int i = sion.length()-1; i >= 0; i--)
+   if (sion.charAt(i) != ' ' && Character.isLetter(sion.charAt(i)) == true)
+    nois = nois + sion.substring(i,i+1);
+      return nois.toLowerCase();
+}
